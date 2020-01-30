@@ -4,6 +4,7 @@
     package="com.example.alarmsample">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -24,9 +25,7 @@
         </activity>
 
 
-        <service
-            android:name=".AlarmService"
-            android:enabled="true" />
+        <service android:name=".AlarmService" />
         <receiver android:name=".AlarmReceiver" />
 
     </application>
